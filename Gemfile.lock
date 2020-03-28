@@ -17,7 +17,7 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     minitest (5.14.0)
-    rake (10.5.0)
+    rake (13.0.1)
     thread_safe (0.3.6)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
@@ -31,7 +31,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   erratum_responsum!
   minitest (~> 5.0)
-  rake (~> 10.0)
+  rake (~> 13.0)
 
 BUNDLED WITH
    2.0.1
