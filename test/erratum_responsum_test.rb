@@ -1,5 +1,6 @@
 require "test_helper"
 
+require 'securerandom'
 require 'erratum_responsum'
 require 'active_support/rescuable'
 
