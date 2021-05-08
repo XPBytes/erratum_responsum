@@ -24,6 +24,13 @@ module ErratumResponsum
            content_type: ErratumResponsum.error_media_type
   end
 
+  # 401
+  def unauthorized(*exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :unauthorized,
+           content_type: ErratumResponsum.error_media_type
+  end
+
   # 403
   def forbidden(exception)
     render json: { errors: serialize_errors(exception) },
@@ -44,6 +51,13 @@ module ErratumResponsum
            content_type: ErratumResponsum.error_media_type
   end
 
+  # 405
+  def method_not_allowed(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :method_not_allowed,
+           content_type: ErratumResponsum.error_media_type
+  end
+
   # 406
   def not_acceptable(exception)
     render json: { errors: serialize_errors(exception) },
@@ -51,17 +65,17 @@ module ErratumResponsum
            content_type: ErratumResponsum.error_media_type
   end
 
-  # 410
-  def gone(exception)
-    render json: { errors: serialize_errors(exception) },
-           status: :gone,
-           content_type: ErratumResponsum.error_media_type
-  end
-
   # 409
   def conflict(exception)
     render json: { errors: serialize_errors(exception) },
            status: :conflict,
+           content_type: ErratumResponsum.error_media_type
+  end
+
+  # 410
+  def gone(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :gone,
            content_type: ErratumResponsum.error_media_type
   end
 
@@ -76,6 +90,34 @@ module ErratumResponsum
   def unprocessable_entity(exception)
     render json: { errors: serialize_errors(exception) },
            status: :unprocessable_entity,
+           content_type: ErratumResponsum.error_media_type
+  end
+
+  # 428
+  def precondition_required(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :precondition_required,
+           content_type: ErratumResponsum.error_media_type
+  end
+
+  # 429
+  def too_many_requests(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :too_many_requests,
+           content_type: ErratumResponsum.error_media_type
+  end
+
+  # 500
+  def internal_server_error(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :internal_server_error,
+           content_type: ErratumResponsum.error_media_type
+  end
+
+  # 501
+  def not_implemented(exception)
+    render json: { errors: serialize_errors(exception) },
+           status: :not_implemented,
            content_type: ErratumResponsum.error_media_type
   end
 
