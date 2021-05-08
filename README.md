@@ -2,7 +2,7 @@
 
 [![Build Status: master](https://travis-ci.com/XPBytes/erratum_responsum.svg)](https://travis-ci.com/XPBytes/erratum_responsum)
 [![Gem Version](https://badge.fury.io/rb/erratum_responsum.svg)](https://badge.fury.io/rb/erratum_responsum)
-[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 Error response handlers for a Rails controller, that always return JSON.
 
